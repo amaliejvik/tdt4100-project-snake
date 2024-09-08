@@ -7,6 +7,13 @@ For å gjøre prosjektet mer engasjerende og morsomt å jobbe med for vår egen 
 
 En bruker starter et spill ved å skrive inn navnet sitt, før de deretter trykker på start-knappen. Da initialiseres et nytt spill, og en slange dukker opp på spillbrettet med et eple. Slangen beveger seg hvert halve sekund, og brukeren må styre slangen til eplet med styringsknappene. Hvis et eple spises, får spilleren et poeng og slangen blir lengre. Spillet er over dersom slangen krasjer i veggen eller seg selv. Da dukker navnet til brukeren samt scoren hen fikk opp på poengtavlen. Denne oppdateres mellom hver spiller ved at nye scores legges til dersom de er gode nok til å være på topp ti. 
 
+## Hvordan kjøre appen?
+
+1. Klon repoet og naviger inn i mappen TDT4100-prosjekt-thomadha.
+2. Gå inn i filen SnakeApp.java
+3. Klikk på "Run":
+   
+<img width="1020" alt="Skjermbilde 2024-09-08 kl  20 48 46" src="https://github.com/user-attachments/assets/32f61e0a-4d2a-43a4-9478-b102b79ef995">
 
 ## Klassediagram: 
 
