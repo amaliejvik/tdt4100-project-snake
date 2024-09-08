@@ -1,0 +1,7 @@
+Thomas,40
+Jennina,21
+Amalie,10
+Katrine,8
+Anine,7
+Sara,5
+Jenny,4

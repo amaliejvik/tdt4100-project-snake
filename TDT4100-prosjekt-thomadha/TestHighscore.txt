@@ -1,0 +1,10 @@
+Hedda,22
+Jennina,21
+Amalie,10
+Thomas,9
+Katrine,8
+Jorunn,8
+Anine,7
+Sara,5
+Jenny,4
+Siri,3

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1000.0" style="-fx-background-color: #90EE90;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.SnakeController">
+   <children>
+      <Label layoutX="236.0" layoutY="26.0" text="VELKOMMEN TIL SNAKE!" textFill="#317bda">
+         <font>
+            <Font size="42.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="769.0" layoutY="260.0" mnemonicParsing="false" onAction="#initializeGame" prefHeight="60.0" prefWidth="162.0" style="-fx-background-color: #A52A2A;" text="START" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.30263158679008484" green="0.30263158679008484" blue="0.30263158679008484" />
+               </color>
+            </DropShadow>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <TextField fx:id="navn" layoutX="755.0" layoutY="208.0" prefHeight="41.0" prefWidth="190.0" style="-fx-background-color: befcbe;">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="813.0" layoutY="175.0" prefHeight="28.0" prefWidth="110.0" text="Navn:" textFill="#317bda">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="822.0" layoutY="389.0" mnemonicParsing="false" onAction="#up" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: #228B22;" text="▲" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="883.0" layoutY="440.0" mnemonicParsing="false" onAction="#right" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: #228B22;" text="▶" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue" size="30.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="824.0" layoutY="500.0" mnemonicParsing="false" onAction="#down" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: #228B22;" text="▼" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="763.0" layoutY="441.0" mnemonicParsing="false" onAction="#left" prefHeight="5.0" prefWidth="0.0" style="-fx-background-color: #228B22;" text="◀" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Helvetica Neue" size="30.0" />
+         </font>
+      </Button>
+      <GridPane fx:id="spillbrett" gridLinesVisible="true" layoutX="333.0" layoutY="196.0" prefHeight="350.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="105.0" layoutY="175.0" text="Poeng score:" textFill="#286cbf">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="272.0" text="Top 10 - Leaderboard: " textFill="#286cbf">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fx:id="poengScore" fill="#286cbf" layoutX="162.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="32.0" />
+         </font></Text>
+      <TextArea fx:id="leaderBoard" layoutX="54.0" layoutY="310.0" prefHeight="256.0" prefWidth="240.0">
+         <font>
+            <Font size="17.0" />
+         </font></TextArea>
+      <Label layoutX="749.0" layoutY="572.0" prefHeight="29.0" prefWidth="250.0" text="Creators: Thomas &amp; Amalie &lt;3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="160.0" prefHeight="29.0" prefWidth="440.0" text="Spille? Skriv inn navnet ditt, og klikk &quot;Start&quot;!" textFill="#317bda">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
