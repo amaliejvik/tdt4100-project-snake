@@ -1,5 +1,5 @@
 # TDT4100: Snake 
-Et prosjekt laget av Thomas Haugli og Amalie Johansen Vik i faget TDT4100 Objektorientert programmering ved NTNU Gløshaugen. Appen ble laget i perioden 20.mars 2023 - 14.april 2023 med Java, JavaFX og Scenebuilder.
+Et prosjekt laget av Thomas Haugli og Amalie Johansen Vik i faget TDT4100 Objektorientert programmering ved NTNU. Appen ble laget i perioden 20.mars 2023 - 14.april 2023 med Java, JavaFX og Scenebuilder.
 
 ## Beskrivelse av appen
 For å gjøre prosjektet mer engasjerende og morsomt å jobbe med for vår egen del, valgte vi å lage et spill. Vi landet på å lage en noe forenklet versjon av det kjente og kjære 90-talls spillet Snake, hvor brukeren styrer en slange rundt på et spillbrett. 
